@@ -1,0 +1,23 @@
+<div [ngClass]="dark ? 'dark-theme' : 'light-theme' ">
+  <p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon"><mat-icon>more_vert</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item color="primary" [routerLink]="['/users']">
+          <mat-icon>group</mat-icon>
+          <span>Users</span>
+        </a>
+        <a mat-menu-item [routerLink]="['/posts']">
+          <mat-icon>markunread_mailbox</mat-icon>
+          <span>Posts</span>
+        </a>
+      </mat-menu>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <mat-slide-toggle [(ngModel)]="dark">Switch Theme</mat-slide-toggle>
+    </mat-toolbar>
+  </p>
+
+  <router-outlet></router-outlet>
+</div>
+  

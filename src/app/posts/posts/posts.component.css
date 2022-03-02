@@ -1,0 +1,7 @@
+.mat-card{
+    display: flex;
+    flex-direction: column;
+}
+.mat-card-actions-align-end {
+    margin-top: auto;
+}

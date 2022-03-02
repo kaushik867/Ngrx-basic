@@ -1,0 +1,16 @@
+<div class="container">
+  <ng-container *ngFor="let post of posts">
+    <mat-card>
+        <mat-card-title>{{post.title}}</mat-card-title>
+        <mat-card-content>
+            <p>
+              Post: {{post.body}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button color="warn">Delete</button>
+          <button mat-button color="primary">Edit</button>
+        </mat-card-actions>
+    </mat-card>
+    </ng-container>
+</div>
