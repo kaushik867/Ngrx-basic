@@ -13,7 +13,7 @@ public posts: Ipost[] = [];
   ngOnInit(): void {
     this.postService.getPosts('/posts').subscribe(data => {
       this.posts = [...data];
-    })
+    });
   }
 
 }
